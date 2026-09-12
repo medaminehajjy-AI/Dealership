@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL: 'http://127.0.0.1:8000/api',
+    baseURL: import.meta.env.VITE_API_URL,
     headers: {
         //'Content-Type': 'application/json',  this line is commented out because axios automatically sets the Content-Type header for JSON requests And it can cause issues when sending FormData (like for file uploads)
         'Accept': 'application/json',

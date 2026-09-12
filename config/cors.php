@@ -8,6 +8,7 @@ return [
 
     'allowed_origins' => [
         env('URL_FRONTEND', 'https://dealership-khaki.vercel.app'),
+        'http://localhost:5173',
     ],
 
     'allowed_origins_patterns' => [],

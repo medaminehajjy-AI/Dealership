@@ -50,7 +50,7 @@ import Footer from './Footer.vue'
   flex: 1;
   min-width: 0;
   padding: 30px;
-  background: #ffffff;
+  background-color: #f5f7fa;
 }
 
 /* Mobile */

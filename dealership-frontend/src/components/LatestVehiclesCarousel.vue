@@ -1,7 +1,7 @@
 <template>
     <div class="latest-vehicles">
 
-        <!-- Section Title -->
+        <!-- Section Title 
         <div class="text-center mb-2">
             <h2 class="fw-bold">
                 {{ t('home.latestVehicles') }}
@@ -10,7 +10,7 @@
             <p class="text-muted">
                 {{ t('home.latestVehiclesSubtitle') }}
             </p>
-        </div>
+        </div>-->
 
         <!-- Loading -->
         <div

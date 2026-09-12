@@ -7,7 +7,7 @@ return [
     'allowed_methods' => ['*'],
 
     'allowed_origins' => [
-        env('URL_FRONTEND', 'https://dealership-khaki.vercel.app'),
+        'https://dealership-khaki.vercel.app',
         'http://localhost:5173',
     ],
 

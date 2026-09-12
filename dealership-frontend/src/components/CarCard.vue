@@ -65,17 +65,17 @@ defineProps({
 
 const getImageUrl = (imagePath) => {
 
-  if (!imagePath) {
-    return ''
-  }
+    if (!imagePath) {
+        return ''
+    }
 
-  if (
-    imagePath.startsWith('http://') ||
-    imagePath.startsWith('https://')
-  ) {
-    return imagePath
-  }
+    if (
+        imagePath.startsWith('http://') ||
+        imagePath.startsWith('https://')
+    ) {
+        return imagePath
+    }
 
-  return `http://127.0.0.1:8000/storage/${imagePath}`
+    return `${import.meta.env.VITE_API_URL}/storage/${imagePath}`
 }
 </script>

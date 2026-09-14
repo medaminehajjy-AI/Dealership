@@ -76,6 +76,8 @@ const getImageUrl = (imagePath) => {
         return imagePath
     }
 
-    return `${import.meta.env.VITE_API_URL}/storage/${imagePath}`
+    const baseUrl = import.meta.env.VITE_API_URL.replace('/api', '')
+
+    return `${baseUrl}/storage/${imagePath}`
 }
 </script>

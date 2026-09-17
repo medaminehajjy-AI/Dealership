@@ -431,19 +431,21 @@ const toggleFavorite = async () => {
 
         const getImageUrl = (imagePath) => {
 
-        if (!imagePath) {
-          return ''
-        }
+            if (!imagePath) {
+                return ''
+            }
 
-        if (
-          imagePath.startsWith('http://') ||
-          imagePath.startsWith('https://')
-        ) {
-          return imagePath
-        }
+            if (
+                imagePath.startsWith('http://') ||
+                imagePath.startsWith('https://')
+            ) {
+                return imagePath
+            }
 
-        return `http://127.0.0.1:8000/storage/${imagePath}`
-      }
+            const baseUrl = import.meta.env.VITE_API_URL.replace('/api', '')
+
+            return `${baseUrl}/storage/${imagePath}`
+        }
 
 
       const submitBooking = async () => {
